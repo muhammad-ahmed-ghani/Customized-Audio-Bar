@@ -1,0 +1,92 @@
+
+#audio-play-bar
+{
+  display: flex;
+  justify-content: center;
+}
+.audio-player {
+  height: 30px;
+  width: 80%;
+  font-family: arial;
+  color: white;
+  font-size: 0.75em;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 6px auto;
+}
+.audio-player .timeline {
+  background: rgba(0, 0, 0, 0.74);
+  height: 50%;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  margin-right: 15px;
+  border-radius: 8px;
+  padding:3px;
+  box-shadow: 0 2px 10px 0 #0008;
+}
+.audio-player .timeline .progress {
+  background: coral;
+  border-radius: 8px;
+  width: 0%;
+  height: 100%;
+  transition: 0.15s;
+}
+.audio-player .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+  padding: 0 10px 0 10px;
+  background-color:rgba(0, 0, 0, 0.74);;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+.audio-player .length {
+color: grey;
+}
+.audio-player .controls > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#play-pause-img
+{
+  height:15px;
+  width:15px;
+}
+.audio-player .controls .toggle-play {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.audio-player .controls .toggle-play:hover {
+  transform: scale(1.1);
+}
+
+.audio-player .controls .time .current{
+  margin:0 10px 0 5px;
+}
+
+@media screen and (max-width:650px)
+{
+  .audio-player
+  {
+    height: 85px;
+    width:90%;
+    flex-direction: column;
+  }
+  .audio-player .controls {
+    height:40%;
+  }
+  .audio-player .timeline {
+    margin:0px;
+    height:25%;
+    width:95%;
+    margin-top:5px;
+    margin-bottom: 3px;
+  }
+}
