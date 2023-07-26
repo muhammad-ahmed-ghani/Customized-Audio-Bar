@@ -4,7 +4,7 @@ const audioPlayer = document.querySelector(".audio-player");
 
 // Just for testing purpose I am using online audio.
 const audio = new Audio(
-  "https://www.naatkhan.com/Download/Ae-Sabz-Gumbad-Wale.mp3"
+  "https://cdnsongs.com/dren/music/data/Punjabi/202305/Still_Rollin/128/Still_Rollin.mp3/Still%20Rollin.mp3"
 );
 
 audio.addEventListener(
